@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Margania – Translator & Interpreter</title>
+  <style>
+    :root {
+      --main-color: #003366;
+      --accent-color: #0073e6;
+      --light-gray: #f7f9fc;
+      --dark-gray: #2c2c2c;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-gray);
+      color: var(--dark-gray);
+    }
+
+    nav {
+      background: var(--main-color);
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    header {
+      background: var(--main-color);
+      color: #fff;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: var(--main-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contact {
+      background: var(--light-gray);
+      border-left: 5px solid var(--accent-color);
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .contact a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--main-color);
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#tariffs">Tariffs</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <h1>Alex Margania</h1>
+  <p>Professional Interpreter & Translator (Georgian / Russian / English)</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a qualified and experienced interpreter and translator specialising in Georgian, Russian, and English. With years of experience in legal, medical, and community settings, I offer accurate, reliable language services tailored to client needs. I am committed to cultural sensitivity, confidentiality, and delivering work of the highest quality.</p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Certified Document Translation (Georgian ↔ English, Russian ↔ English)</li>
+    <li>Consecutive & Remote Interpreting (Legal, Medical, Business)</li>
+    <li>Proofreading & Editing of Translated Materials</li>
+    <li>Voiceover & Subtitling Assistance</li>
+  </ul>
+</section>
+
+<section id="tariffs">
+  <h2>Tariffs</h2>
+  <p>Rates vary depending on the nature and urgency of the assignment. Please contact me directly for a personalised quote.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:alex.margania@email.com">alex.margania@email.com</a></p>
+  <p>Phone: +44 7000 000000</p>
+  <p>Location: London, UK (Available nationwide & remotely)</p>
+</section>
+
+<footer>
+  &copy; 2025 Alex Margania. All rights reserved.
+</footer>
+
+<script>
+  // Fade-in effect on scroll
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</body>
+</html>
