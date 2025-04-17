@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Testimonials – David Kaplan</title>
+  <title>Contact – David Kaplan</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -22,27 +22,25 @@
 </nav>
 
 <section class="hero">
-  <h1>Client Testimonials</h1>
-  <p>What clients say about my interpreting and translation services</p>
-  <a href="contact.html" class="cta">Hire Me Today</a>
+  <h1>Contact</h1>
+  <p>Let's discuss your needs — quick response guaranteed</p>
+  <a href="mailto:david@kaplanlanguages.co.uk" class="cta">Email Me Directly</a>
 </section>
 
 <section class="container">
-  <h2>Trusted by Legal Professionals</h2>
-  <blockquote>
-    <p>"David provided flawless interpreting during our court hearing. He was professional, accurate and a pleasure to work with."</p>
-    <footer>— Solicitor, London</footer>
-  </blockquote>
+  <h2>Send a Message</h2>
+  <form action="https://formspree.io/f/meoawowq" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
 
-  <blockquote>
-    <p>"Very fast and accurate translation of legal documents. Highly recommended for urgent immigration work."</p>
-    <footer>— Immigration Advisor, Birmingham</footer>
-  </blockquote>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="_replyto" placeholder="Your Email" required />
 
-  <blockquote>
-    <p>"Reliable and confidential. David’s courtroom presence and language precision were essential to our successful case outcome."</p>
-    <footer>— Barrister, Manchester</footer>
-  </blockquote>
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="What would you like to discuss?" required></textarea>
+
+    <button type="submit" class="button">Send Message</button>
+  </form>
 </section>
 
 <footer>
